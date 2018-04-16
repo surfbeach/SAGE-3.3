@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Fichier de paramètres pour l'installation automatisée de Sage à Montréal  -->
+<Installation>
+	<Parametres>
+		<Environnements>
+			<Tous>
+				<lecteurRacine>C:\</lecteurRacine>
+				<repertoireSource>AppsInstallation\Sources_Installation\Sage\distribution\WS\WSSAGE\</repertoireSource>
+				<nomAppIIS></nomAppIIS>
+				<nomVirDirIIS></nomVirDirIIS>
+				<nomMSI>MTQ.Sage.Services.msi</nomMSI>
+				<nomLog>_installation_msi.log</nomLog>
+				<inclureFichierMSI>O</inclureFichierMSI>
+				<codeProduit>{44D918CD-5BE5-4BF4-AE61-2FB88F77195F}</codeProduit>
+			</Tous>
+			<UNIT>
+				<nomSiteIIS>service.sage.dev.mtq.min.intra</nomSiteIIS>
+				<VariableDialogueMSI>ENVPROD=1</VariableDialogueMSI>
+	        </UNIT>
+			<ACCP>
+				<nomSiteIIS>service.sage.acp.mtq.min.intra</nomSiteIIS>    
+				<VariableDialogueMSI>ENVPROD=4</VariableDialogueMSI>
+	        </ACCP>
+			<PROD>
+				<nomSiteIIS>service.sage.mtq.min.intra</nomSiteIIS>
+				<VariableDialogueMSI>ENVPROD=6</VariableDialogueMSI>
+			</PROD>
+	    </Environnements>
+	</Parametres>
+</Installation>
